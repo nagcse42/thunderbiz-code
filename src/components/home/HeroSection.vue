@@ -73,7 +73,7 @@
         </div>
 
         <!-- ── Right: Holographic HUD ── -->
-        <div ref="visualRef" class="relative opacity-0 flex items-center justify-center">
+        <div ref="visualRef" class="relative opacity-0 flex flex-col items-center justify-center w-full">
           <div class="hud-panel relative w-full"
                style="aspect-ratio:1/0.85; max-width:620px; margin:0 auto; margin-top:-40px;"
                :style="parallaxStyle">
@@ -95,25 +95,25 @@
             <div class="hud-corner" style="bottom:12px;right:12px;border-width:0 2px 2px 0;" aria-hidden="true"></div>
 
             <!-- System label top-left -->
-            <div class="absolute top-5 left-6 font-mono text-[10px] leading-relaxed" style="color:rgba(96,200,255,0.55);" aria-hidden="true">
+            <div class="hidden sm:block absolute top-5 left-6 font-mono text-[10px] leading-relaxed" style="color:rgba(96,200,255,0.55);" aria-hidden="true">
               TBS-SYS v3.1<br/>
               <span style="color:rgba(212,175,55,0.6);">STATUS: ONLINE</span>
             </div>
 
             <!-- Live indicator top-right -->
-            <div class="absolute top-5 right-6 flex items-center gap-2" aria-hidden="true">
+            <div class="hidden sm:flex absolute top-5 right-6 items-center gap-2" aria-hidden="true">
               <span class="w-1.5 h-1.5 rounded-full" style="background:#60C8FF; animation:pulseDot 1.4s ease-in-out infinite"></span>
               <span class="font-mono text-[11px]" style="color:rgba(96,200,255,0.7);">ACTIVE</span>
             </div>
 
             <!-- Coordinate bottom-left -->
-            <div class="absolute bottom-5 left-6 font-mono text-[9px]" style="color:rgba(96,200,255,0.4);" aria-hidden="true">
+            <div class="hidden sm:block absolute bottom-5 left-6 font-mono text-[9px]" style="color:rgba(96,200,255,0.4);" aria-hidden="true">
               LAT: 25.2°N &nbsp; LON: 55.3°E<br/>
               <span style="color:rgba(212,175,55,0.45);">DUBAI, UNITED ARAB EMIRATES</span>
             </div>
 
             <!-- Application counter bottom-right -->
-            <div class="absolute bottom-5 right-6 text-right font-mono text-[9px]" style="color:rgba(96,200,255,0.4);" aria-hidden="true">
+            <div class="hidden sm:block absolute bottom-5 right-6 text-right font-mono text-[9px]" style="color:rgba(96,200,255,0.4);" aria-hidden="true">
               <span style="color:rgba(212,175,55,0.6);">2,400+</span> BUSINESSES<br/>
               SUCCESSFULLY FORMED
             </div>
@@ -165,7 +165,7 @@
                 <div class="hud-node" style="top:50%;right:-2px;transform:translateY(-50%);">
                   <div class="hud-node-dot" style="background:rgba(212,175,55,0.15);border-color:rgba(212,175,55,0.6);"></div>
                   <div class="hud-node-line" style="left:100%;width:28px;background:rgba(212,175,55,0.35);"></div>
-                  <div class="hud-node-card" style="left:calc(100% + 30px);">
+                  <div class="hud-node-card hidden sm:block" style="left:calc(100% + 30px);">
                     <div style="font-size:9px;color:rgba(212,175,55,0.6);letter-spacing:0.1em;margin-bottom:2px;">DED · DDA · ADDED</div>
                     <div style="font-size:13px;color:#D4AF37;font-weight:700;">Mainland</div>
                     <div style="font-size:9px;color:rgba(255,255,255,0.4);margin-top:1px;">Commercial · Professional · Industrial</div>
@@ -175,7 +175,7 @@
                 <!-- Node: FREE ZONE (top-right) -->
                 <div class="hud-node" style="top:18%;right:18%;transform:translate(50%,-50%);">
                   <div class="hud-node-dot" style="background:rgba(96,200,255,0.15);border-color:rgba(96,200,255,0.6);"></div>
-                  <div class="hud-node-card" style="top:-46px;left:50%;transform:translateX(-50%);white-space:nowrap;">
+                  <div class="hud-node-card hidden sm:block" style="top:-46px;left:50%;transform:translateX(-50%);white-space:nowrap;">
                     <div style="font-size:9px;color:rgba(96,200,255,0.6);letter-spacing:0.1em;margin-bottom:2px;">DMCC · DIFC · DAFZA · JAFZA · IFZA</div>
                     <div style="font-size:13px;color:#60C8FF;font-weight:700;">Free Zone</div>
                     <div style="font-size:9px;color:rgba(255,255,255,0.4);margin-top:1px;">45+ Authorities · 0% Tax</div>
@@ -185,7 +185,7 @@
                 <!-- Node: GOLDEN VISA (top-left) -->
                 <div class="hud-node" style="top:18%;left:18%;transform:translate(-50%,-50%);">
                   <div class="hud-node-dot" style="background:rgba(212,175,55,0.15);border-color:rgba(212,175,55,0.55);"></div>
-                  <div class="hud-node-card" style="top:-36px;right:50%;transform:translateX(50%);white-space:nowrap;">
+                  <div class="hud-node-card hidden sm:block" style="top:-36px;right:50%;transform:translateX(50%);white-space:nowrap;">
                     <div style="font-size:9px;color:rgba(212,175,55,0.6);letter-spacing:0.1em;margin-bottom:2px;">ICP</div>
                     <div style="font-size:13px;color:#D4AF37;font-weight:700;">Golden Visa</div>
                     <div style="font-size:9px;color:rgba(255,255,255,0.4);margin-top:1px;">10 Year Residency</div>
@@ -196,7 +196,7 @@
                 <div class="hud-node" style="top:50%;left:-2px;transform:translateY(-50%);">
                   <div class="hud-node-dot" style="background:rgba(96,200,255,0.15);border-color:rgba(96,200,255,0.5);"></div>
                   <div class="hud-node-line" style="right:100%;width:28px;background:rgba(96,200,255,0.3);"></div>
-                  <div class="hud-node-card" style="right:calc(100% + 30px);text-align:right;">
+                  <div class="hud-node-card hidden sm:block" style="right:calc(100% + 30px);text-align:right;">
                     <div style="font-size:9px;color:rgba(96,200,255,0.6);letter-spacing:0.1em;margin-bottom:2px;">RAK ICC · JAFZA · ADGM · DIFC</div>
                     <div style="font-size:13px;color:#60C8FF;font-weight:700;">Offshore</div>
                     <div style="font-size:9px;color:rgba(255,255,255,0.4);margin-top:1px;">Asset Protection · Privacy</div>
@@ -206,7 +206,7 @@
                 <!-- Node: BUSINESS BANKING (bottom-right) -->
                 <div class="hud-node" style="bottom:18%;right:18%;transform:translate(50%,50%);">
                   <div class="hud-node-dot" style="background:rgba(34,197,94,0.15);border-color:rgba(34,197,94,0.6);"></div>
-                  <div class="hud-node-card" style="bottom:-46px;left:50%;transform:translateX(-50%);white-space:nowrap;">
+                  <div class="hud-node-card hidden sm:block" style="bottom:-46px;left:50%;transform:translateX(-50%);white-space:nowrap;">
                     <div style="font-size:9px;color:rgba(34,197,94,0.7);letter-spacing:0.1em;margin-bottom:2px;">ENBD · FAB · ADCB · RAKBANK</div>
                     <div style="font-size:13px;color:#22C55E;font-weight:700;">Business Banking</div>
                     <div style="font-size:9px;color:rgba(255,255,255,0.4);margin-top:1px;">Multi-Currency · Corporate Account</div>
@@ -216,7 +216,7 @@
                 <!-- Node: PRO SERVICES (bottom-left) -->
                 <div class="hud-node" style="bottom:18%;left:18%;transform:translate(-50%,50%);">
                   <div class="hud-node-dot" style="background:rgba(212,175,55,0.15);border-color:rgba(212,175,55,0.5);"></div>
-                  <div class="hud-node-card" style="bottom:-36px;right:50%;transform:translateX(50%);white-space:nowrap;">
+                  <div class="hud-node-card hidden sm:block" style="bottom:-36px;right:50%;transform:translateX(50%);white-space:nowrap;">
                     <div style="font-size:9px;color:rgba(212,175,55,0.6);letter-spacing:0.1em;margin-bottom:2px;">GOVT</div>
                     <div style="font-size:13px;color:#D4AF37;font-weight:700;">PRO Services</div>
                     <div style="font-size:9px;color:rgba(255,255,255,0.4);margin-top:1px;">Visa & Permits</div>
@@ -227,7 +227,7 @@
             </div>
 
             <!-- Progress arc: 98% approval -->
-            <div class="absolute top-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 font-mono" aria-hidden="true">
+            <div class="hidden sm:flex absolute top-4 left-1/2 -translate-x-1/2 flex-col items-center gap-1 font-mono" aria-hidden="true">
               <svg width="54" height="30" viewBox="0 0 54 30">
                 <path d="M4 28 A23 23 0 0 1 50 28" fill="none" stroke="rgba(96,200,255,0.12)" stroke-width="3" stroke-linecap="round"/>
                 <path d="M4 28 A23 23 0 0 1 50 28" fill="none" stroke="rgba(212,175,55,0.7)" stroke-width="3" stroke-linecap="round" stroke-dasharray="71.6 73.1"/>
@@ -235,6 +235,18 @@
               <span style="font-size:10px;color:rgba(212,175,55,0.7);margin-top:-6px;">98% APPROVAL</span>
             </div>
 
+          </div>
+
+          <!-- Mobile service summary (replaces orbiting cards below sm) -->
+          <div class="sm:hidden grid grid-cols-2 gap-2.5 mt-6 w-full max-w-[420px]">
+            <div v-for="node in mobileNodes" :key="node.label" class="rounded-lg px-3 py-2.5"
+                 style="background: rgba(4,8,24,0.7);" :style="`border:1px solid ${node.color}30;`">
+              <div class="flex items-center gap-1.5 mb-1">
+                <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" :style="`background:${node.color};`" aria-hidden="true"></span>
+                <span class="text-[11px] font-bold" :style="`color:${node.color};`">{{ node.label }}</span>
+              </div>
+              <div class="text-[9px] leading-snug" style="color:rgba(255,255,255,0.4);">{{ node.desc }}</div>
+            </div>
           </div>
         </div>
 
@@ -290,6 +302,15 @@ const stats = [
   { value: '98%',    label: 'Approval Rate' },
   { value: '48 Hrs', label: 'Avg Processing' },
   { value: '8 Yrs',  label: 'Dubai Experience' },
+]
+
+const mobileNodes = [
+  { label: 'Mainland',         desc: 'Commercial · Professional · Industrial', color: '#D4AF37' },
+  { label: 'Free Zone',        desc: '45+ Authorities · 0% Tax',               color: '#60C8FF' },
+  { label: 'Golden Visa',      desc: '10 Year Residency',                      color: '#D4AF37' },
+  { label: 'Offshore',         desc: 'Asset Protection · Privacy',             color: '#60C8FF' },
+  { label: 'Business Banking', desc: 'Multi-Currency · Corporate Account',     color: '#22C55E' },
+  { label: 'PRO Services',     desc: 'Visa & Permits',                         color: '#D4AF37' },
 ]
 
 // ── Particle field (blue-gold mix) ──────────────────────────────────────────
