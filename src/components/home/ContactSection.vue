@@ -85,7 +85,7 @@
 
             <!-- Error banner -->
             <div v-if="formState === 'error'" class="mb-5 bg-[rgba(239,68,68,0.06)] border border-[rgba(239,68,68,0.2)] rounded-xl px-4 py-3 text-[12px] text-[#EF4444]" role="alert">
-              Failed to send your enquiry. Please try again or email us directly at nagcse42@gmail.com
+              Failed to send your enquiry. Please try again or email us directly at info@thunderbizsetup.com
             </div>
 
             <!-- Row 1 -->
@@ -236,7 +236,7 @@ async function submitForm() {
   formState.value = 'loading'
 
   try {
-    const res = await fetch('https://formsubmit.co/ajax/nagcse42@gmail.com', {
+    const res = await fetch('https://formsubmit.co/ajax/a79e75a80a4ad6f657dcf376223680f9', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
@@ -268,8 +268,8 @@ async function submitForm() {
 const contactDetails = [
   {
     label:    'Email Us',
-    value:    'nagcse42@gmail.com',
-    href:     'mailto:nagcse42@gmail.com',
+    value:    'info@thunderbizsetup.com',
+    href:     'mailto:info@thunderbizsetup.com',
     external: false,
     icon:     '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>'
   },

@@ -79,8 +79,8 @@ thunder-biz-setup/
 ## Contact Form
 
 Uses **FormSubmit AJAX** (no backend required):
-- Endpoint: `https://formsubmit.co/ajax/nagcse42@gmail.com`
-- All enquiries go to: `nagcse42@gmail.com`
+- Endpoint: `https://formsubmit.co/ajax/info@thunderbizsetup.com`
+- All enquiries go to: `info@thunderbizsetup.com`
 - Subject: `New Business Setup Enquiry - Thunder Biz Setup`
 - Fields: Name, Email, Mobile, Company, Activity, Setup Type, Budget, Message
 - Built-in validation, loading state, success/error feedback
@@ -96,9 +96,6 @@ In `WhatsAppButton.vue` and `ContactSection.vue`:
 ```
 https://wa.me/971XXXXXXXXX
 ```
-
-### Change Email
-Search and replace `nagcse42@gmail.com` across the project.
 
 ### Update Pricing
 Edit `PackagesSection.vue` — `starterFeatures`, `proFeatures`, `enterpriseFeatures` arrays.

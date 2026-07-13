@@ -72,6 +72,45 @@
       <div class="absolute bottom-0 left-0 right-0 h-px" style="background:linear-gradient(90deg,transparent,rgba(212,175,55,0.2),transparent);" aria-hidden="true"></div>
     </section>
 
+    <!-- ── Mission & Vision ── -->
+    <section class="py-24 relative overflow-hidden" aria-labelledby="mission-heading">
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+           style="background:radial-gradient(ellipse at 50% 0%, rgba(212,175,55,0.05) 0%, transparent 55%);"></div>
+      <div class="max-w-6xl mx-auto px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Mission -->
+          <div class="rounded-2xl p-10 relative overflow-hidden" style="background:rgba(8,10,28,0.9); border:1px solid rgba(212,175,55,0.15);">
+            <div class="absolute top-0 left-[10%] right-[10%] h-px" style="background:linear-gradient(90deg,transparent,rgba(212,175,55,0.6),transparent);" aria-hidden="true"></div>
+            <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full"
+                 style="background:rgba(212,175,55,0.06); border:1px solid rgba(212,175,55,0.22);">
+              <span class="text-[9px] tracking-[0.2em] uppercase font-bold" style="color:#D4AF37;">Our Mission</span>
+            </div>
+            <h2 id="mission-heading" class="font-serif text-2xl lg:text-3xl font-extrabold text-white mb-4">
+              From Idea to Incorporation
+            </h2>
+            <p class="text-[13px] leading-[1.9]" style="color:#8898AA;">
+              We exist to turn "I have an idea" into "I have a company." We don't just file paperwork — we lay the legal foundation for legacies. Our mission is to make company formation seamless, so builders can focus on building fast, fearlessly, and without the red tape.
+            </p>
+          </div>
+
+          <!-- Vision -->
+          <div class="rounded-2xl p-10 relative overflow-hidden" style="background:rgba(8,10,28,0.9); border:1px solid rgba(96,200,255,0.15);">
+            <div class="absolute top-0 left-[10%] right-[10%] h-px" style="background:linear-gradient(90deg,transparent,rgba(96,200,255,0.6),transparent);" aria-hidden="true"></div>
+            <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full"
+                 style="background:rgba(96,200,255,0.06); border:1px solid rgba(96,200,255,0.22);">
+              <span class="text-[9px] tracking-[0.2em] uppercase font-bold" style="color:#60C8FF;">Our Vision</span>
+            </div>
+            <h2 class="font-serif text-2xl lg:text-3xl font-extrabold text-white mb-4">
+              The Gateway to Incorporation
+            </h2>
+            <p class="text-[13px] leading-[1.9]" style="color:#8898AA;">
+              To become the fastest, most trusted gateway between ambition and incorporation — anywhere in the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ── Timeline: Our Story ── -->
     <section class="py-24 relative overflow-hidden" aria-labelledby="story-heading">
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true"

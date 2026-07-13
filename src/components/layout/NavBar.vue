@@ -42,7 +42,7 @@
       <!-- CTA -->
       <div class="hidden lg:flex items-center gap-3">
         <a
-          href="mailto:nagcse42@gmail.com"
+          href="mailto:info@thunderbizsetup.com"
           class="text-[11px] text-[#D4AF37] border border-[rgba(212,175,55,0.3)] rounded-lg px-4 py-2 hover:bg-[rgba(212,175,55,0.08)] transition-all duration-200 tracking-widest uppercase font-semibold"
           aria-label="Send us an email"
         >
